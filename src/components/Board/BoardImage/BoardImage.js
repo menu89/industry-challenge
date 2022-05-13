@@ -5,10 +5,26 @@ import './BoardImage.scss';
 const BoardImage = () => {
   return (
     <div className='bi'>
-      <img className='bi__image' src={placeholder} alt="image" />
-      <img className='bi__image' src={placeholder} alt="image" />
-      <img className='bi__image' src={placeholder} alt="image" />
-      <img className='bi__image' src={placeholder} alt="image" />
+      <div className='bi__wrapper'>
+        <img className='bi__image' src={placeholder} alt="image" />
+        <h3 className='bi__text'>Placeholder</h3>
+      </div>
+
+      <div className='bi__wrapper'>
+        <img className='bi__image' src={placeholder} alt="image" />
+        <h3 className='bi__text'>Placeholder</h3>
+      </div>
+
+      <div className='bi__wrapper'>
+        <img className='bi__image' src={placeholder} alt="image" />
+        <h3 className='bi__text'>Placeholder</h3>
+      </div>
+
+      <div className='bi__wrapper'>
+        <img className='bi__image' src={placeholder} alt="image" />
+        <h3 className='bi__text'>Placeholder</h3>
+      </div>
+      
     </div>
   );
 };

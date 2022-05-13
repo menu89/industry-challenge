@@ -9,6 +9,8 @@ class Spotlight extends Component {
       <div>
         <SpotlightComp />
         <Board />
+        <Board />
+        <Board />
       </div>
     );
   }
