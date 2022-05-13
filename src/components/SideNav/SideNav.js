@@ -21,6 +21,7 @@ class SideNav extends Component {
           <FaRegStar />
           <FaRegStarHalf />
         </div>
+        <br />
         <h4>PHOTOGRAPHER</h4>
         <BiArrowBack className='sidenav__back-arrow'/>
         <div className='sidenav__button-wrapper'>
