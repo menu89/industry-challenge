@@ -1,0 +1,36 @@
+@use '../../partials/colors' as *;
+@use '../../partials/typography' as *;
+
+.topnav {
+  display: flex;
+  align-items: center;
+  //margin-left: 15rem;
+  height: 4rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 18rem;
+
+  &__logo {
+    height: 2.25rem;
+    width: auto;
+  }
+
+  &__title {
+    color: $ss-red;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    color: $ss-grey;
+
+    &--current {
+      border: 2px solid $ss-red;
+      border-radius: 1rem;
+    }
+  }
+}

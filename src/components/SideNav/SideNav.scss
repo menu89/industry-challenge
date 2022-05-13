@@ -12,27 +12,44 @@ body {
   width: 15rem;
   background-color: $ss-grey;
   height: 100vh;
-  align-items: center;
+  padding: 2rem;
+
 
   &__avatar {
-
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
   }
 
   &__username {
     text-transform: uppercase;
     color: $ss-red;
     font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  &__copy {
+    margin: 1rem 0;
+  }
+
+  &__back-arrow {
+    align-self: flex-end;
   }
 
   &__button-wrapper {
     display: flex;
+    align-self: center;
+    // margin top to offset is a dirty way to style, but this is a hack-a-thon 🤷‍♂️
+    margin-top: 20rem;
   }
 
   &__button {
     background-color: #FFF;
     padding: 0.5rem;
     border-radius: 20px;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     color: $ss-neutral-light;
   }
 }
