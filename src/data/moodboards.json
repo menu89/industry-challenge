@@ -47,17 +47,20 @@
         "images": [
             "/eveningfire-i02.jpg",
             "/eveningfire-i03.jpg",
-            "/eveningfire-i04.jpg"
+            "/eveningfire-i04.jpg",
+            "/eveningfire-i05.jpg"
         ],
         "music": [
             "/eveningfire-m01.jpg",
             "/eveningfire-m02.jpg",
-            "/eveningfire-m03.jpg"
+            "/eveningfire-m03.jpg",
+            "/eveningfire-m04.jpg"
         ],
         "video": [
             "/eveningfire-v01.jpg",
             "/eveningfire-v02.jpg",
-            "/eveningfire-v03.jpg"
+            "/eveningfire-v03.jpg",
+            "/eveningfire-v04.jpg"
         ]
     },
     {
