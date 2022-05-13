@@ -2,6 +2,8 @@
 @use '../../partials/typography' as *;
 
 .board {
+  margin: 1.5rem 0;
+
   &__copy-container {
     display: flex;
     align-items: baseline;
