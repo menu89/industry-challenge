@@ -1,9 +1,10 @@
-import './App.css';
+import './App.scss';
+import SideNav from './components/SideNav/SideNav.js';
 
 function App() {
   return (
     <div className="App">
-      <p>shutterstock</p>
+      <SideNav />
     </div>
   );
 }

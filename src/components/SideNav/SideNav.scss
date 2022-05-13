@@ -1,0 +1,38 @@
+@use '../../partials/colors' as *;
+@use '../../partials/typography' as *;
+
+
+body {
+  color: #FFF;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  background-color: $ss-grey;
+  height: 100vh;
+  align-items: center;
+
+  &__avatar {
+
+  }
+
+  &__username {
+    text-transform: uppercase;
+    color: $ss-red;
+    font-size: 1.5rem;
+  }
+
+  &__button-wrapper {
+    display: flex;
+  }
+
+  &__button {
+    background-color: #FFF;
+    padding: 0.5rem;
+    border-radius: 20px;
+    margin: 0 1rem;
+    color: $ss-neutral-light;
+  }
+}
