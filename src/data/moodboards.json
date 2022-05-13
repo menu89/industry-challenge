@@ -1,0 +1,112 @@
+[
+    {
+        "id":"s01",
+        "mood":"Celestial",
+        "category":"spotlight",
+        "mainImage": "/celestial-i01.jpg",
+        "images": [
+            "/celestial-i02.jpg",
+            "/celestial-i03.jpg",
+            "/celestial-i04.jpg",
+            "/celestial-i05.jpg"
+        ]
+    },
+    {
+        "id": "p01",
+        "mood":"Sunset",
+        "category":"personal",
+        "mainImage":"/sunset-i01.jpg",
+        "images": []
+    },
+    {
+        "id": "p02",
+        "mood":"Winter",
+        "category":"personal",
+        "mainImage":"/winter-i01.jpg",
+        "images": []
+    },
+    {
+        "id": "p03",
+        "mood":"Moonlight",
+        "category":"personal",
+        "mainImage":"/moonlight-i01.jpg",
+        "images": []
+    },
+    {
+        "id": "p04",
+        "mood":"Autumn",
+        "category": "personal",
+        "mainImage": "/autumn-i01.jpg",
+        "images": []
+    },
+    {
+        "id": "c01",
+        "mood":"Evening Fire",
+        "category":"collaborative",
+        "mainImage":"/eveningfire-i01.jpg",
+        "images": [
+            "/eveningfire-i02.jpg",
+            "/eveningfire-i03.jpg",
+            "/eveningfire-i04.jpg"
+        ],
+        "music": [
+            "/eveningfire-m01.jpg",
+            "/eveningfire-m02.jpg",
+            "/eveningfire-m03.jpg"
+        ],
+        "video": [
+            "/eveningfire-v01.jpg",
+            "/eveningfire-v02.jpg",
+            "/eveningfire-v03.jpg"
+        ]
+    },
+    {
+        "id": "c02",
+        "mood":"Beach",
+        "category":"collaborative",
+        "mainImage":"/beach-i01.jpg",
+        "images": []
+    },
+    {
+        "id": "c03",
+        "mood": "evening",
+        "category": "collaborative",
+        "mainImage":"/evening-i01.jpg",
+        "images": []
+    },
+    {
+        "id": "c04",
+        "mood":"Product Photography",
+        "category":"collaborative",
+        "mainImage":"/product-i01.jpg",
+        "images": []
+    },
+    {
+        "id": "r01",
+        "mood": "Wildlife",
+        "category": "recommended",
+        "mainImage":"/wildlife-i01.jpg",
+        "images": []
+    },
+    {
+        "id": "r02",
+        "mood": "Animal Photography",
+        "category": "recommended",
+        "mainImage": "/animal-i01.jpg",
+        "images": []
+    },
+    {
+        "id": "r03",
+        "mood": "Mountain Views",
+        "category": "recommended",
+        "mainImage":"/mountain-i01.jpg",
+        "images": []
+    },
+    {
+        "id": "r04",
+        "mood": "Candid Photography",
+        "category": "recommended",
+        "mainImage":"/candid-i01.jpg",
+        "images": []
+    }
+]
