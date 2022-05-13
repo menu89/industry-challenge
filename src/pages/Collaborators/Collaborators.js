@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { AiFillHeart, AiOutlineShareAlt, AiOutlineSave, AiOutlineComment } from 'react-icons/ai';
 import './Collaborators.scss';
 import placeholder from '../../assets/images/placeholder.jpg';
+import ExploreMore from './ExploreMore/ExploreMore.js'
 
 class Collaborators extends Component {
   render() {
@@ -76,6 +77,11 @@ class Collaborators extends Component {
           </div>
 
         </div>
+
+        <h1 className='collab__mb-header'>Explore more</h1>
+        <ExploreMore />
+        <ExploreMore />
+        <ExploreMore />
       </div> 
     );
   }

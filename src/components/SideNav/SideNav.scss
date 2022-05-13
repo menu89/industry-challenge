@@ -10,6 +10,7 @@
   padding: 2rem;
   margin-right: 3rem;
   color: #FFF;
+  position: fixed;
 
   &__avatar {
     width: 5rem;
@@ -36,7 +37,7 @@
 
   &__button-wrapper {
     display: flex;
-    align-self: center;
+    justify-content: space-between;
     // margin top to offset is a dirty way to style, but this is a hack-a-thon 🤷‍♂️
     margin-top: 20rem;
   }
@@ -45,7 +46,8 @@
     background-color: #FFF;
     padding: 0.5rem;
     border-radius: 20px;
-    margin: 0 0.5rem;
     color: $ss-neutral-light;
+    font-size: 0.625rem;
+    // width: 40%;
   }
 }
