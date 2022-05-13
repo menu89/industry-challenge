@@ -1,11 +1,6 @@
 @use '../../partials/colors' as *;
 @use '../../partials/typography' as *;
 
-
-body {
-  color: #FFF;
-}
-
 .sidenav {
   display: flex;
   flex-direction: column;
@@ -13,7 +8,8 @@ body {
   background-color: $ss-grey;
   height: 100vh;
   padding: 2rem;
-
+  margin-right: 3rem;
+  color: #FFF;
 
   &__avatar {
     width: 5rem;

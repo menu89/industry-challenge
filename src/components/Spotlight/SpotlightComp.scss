@@ -1,0 +1,44 @@
+@use '../../partials/colors' as *;
+@use '../../partials/typography' as *;
+
+.spc {
+  margin-top: 1.5rem;
+
+  &__title {
+    border-bottom: 1px solid $ss-red;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+  }
+
+  &__creator-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__creator-avatar {
+    width: 10.25rem;
+    margin-right: 1.5rem;
+  }
+
+  &__copy-container {
+    margin-right: 3rem;
+  }
+
+  &__creator-title {
+    font-size: 5rem;
+    font-style: italic;
+  }
+
+  &__text {
+    font-weight: bold;
+  }
+
+  &__gallery {
+
+  }
+
+  &__image {
+    width: 6.25rem;
+    margin-right: 1.5rem;
+  }
+}
