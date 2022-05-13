@@ -3,10 +3,28 @@ import { AiFillHeart, AiOutlineShareAlt, AiOutlineSave, AiOutlineComment } from 
 import './Collaborators.scss';
 import placeholder from '../../assets/images/placeholder.jpg';
 import ExploreMore from './ExploreMore/ExploreMore.js'
+import imageData from '../../data/moodboards.json';
+import { Redirect } from 'react-router';
+
+const findObj = imageData.find(obj => obj.mood === "Evening Fire")
+const imageAddress = 'http://localhost:8080/shutterstock'
+
 
 class Collaborators extends Component {
+  state = {
+    redirect: false
+  }
+
+  handleClick = () => {
+    this.setState({
+      redirect:true
+    })
+  }
+
   render() {
     return (
+      <>
+      { this.state.redirect ? <Redirect to="/" /> : null}
       <div className='collab'>
         <h2>Collaborators</h2>
         <p className='collab__created-text'>
@@ -21,11 +39,11 @@ class Collaborators extends Component {
 
         </div>
 
-        <h2>Moodboard</h2>
+        <h2 onClick={this.handleClick}>Moodboard</h2>
         <h1 className='collab__mb-header'>Evening Fire</h1>
         <div className='collab__mb-container'>
           <div className='collab__mb-image-container'>
-            <img className='collab__mb-image' src={placeholder} alt='image' />
+            <img className='collab__mb-image' src={`${imageAddress}${findObj.mainImage}`} alt='desc' />
             <p className='collab__mb-image-label'>made with Jan</p>
           </div>
           <div className='collab__mb-content-container'>
@@ -79,10 +97,11 @@ class Collaborators extends Component {
         </div>
 
         <h1 className='collab__mb-header'>Explore more</h1>
-        <ExploreMore />
-        <ExploreMore />
-        <ExploreMore />
+        <ExploreMore title="Images" list={findObj.images} />
+        <ExploreMore title="Video" list={findObj.video}/>
+        <ExploreMore title="Music" list={findObj.music} />
       </div> 
+      </>
     );
   }
 }

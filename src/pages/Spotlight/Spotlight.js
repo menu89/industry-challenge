@@ -8,7 +8,7 @@ class Spotlight extends Component {
   render() {
     return (
       <div>
-        <SpotlightComp />
+        <SpotlightComp boardsData={imageData.filter(oneBoard => {return oneBoard.category === "spotlight"})[0]} />
         <Board name="Your Boards" boardsData={imageData.filter(oneBoard => {return oneBoard.category === "personal"})} />
         <Board name="Collaborative Boards" boardsData={imageData.filter(oneBoard => {return oneBoard.category === "collaborative"})}/>
         <Board name="Recommended Boards" boardsData={imageData.filter(oneBoard => {return oneBoard.category === "recommended"})}/>

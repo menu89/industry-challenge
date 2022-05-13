@@ -5,7 +5,6 @@ import './BoardImage.scss';
 const BoardImage = ({boardsInformation}) => {
   return (
     <div className='bi'>
-      {console.log(boardsInformation)}
       <SingleBoardImage oneBoard={boardsInformation[0]} />
       <SingleBoardImage oneBoard={boardsInformation[1]} />
       <SingleBoardImage oneBoard={boardsInformation[2]} />

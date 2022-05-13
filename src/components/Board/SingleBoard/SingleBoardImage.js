@@ -1,13 +1,33 @@
+import React from 'react';
+import { Component } from "react";
+import { Redirect } from 'react-router-dom';
 const imageAddress = 'http://localhost:8080/shutterstock'
 
-const SingleBoardImage = ({oneBoard}) => {
-    return (
-        <div className='bi__wrapper'>
-            {console.log(oneBoard)}
-            <img className='bi__image' src={`${imageAddress}${oneBoard.mainImage}`} alt="description" />
-            <h3 className='bi__text'>{oneBoard.mood}</h3>
-        </div>
-    )
+class SingleBoardImage extends Component {
+    state = {
+        redirect:false
+    }
+
+    handleClick = () => {
+        this.setState({
+            redirect: true
+        })
+    }
+
+    render() {
+        const {id, category, mainImage, mood} = this.props.oneBoard
+
+        return (
+            <>
+            { this.state.redirect ? <Redirect to="/board" /> : null}
+            <div className='bi__wrapper'>
+                <img className='bi__image' src={`${imageAddress}${mainImage}`} alt="description" onClick={this.handleClick} />
+                <h3 className='bi__text'>{mood}</h3>
+            </div>
+            </>
+        )
+    }
+    
 }
 
 export default SingleBoardImage;
