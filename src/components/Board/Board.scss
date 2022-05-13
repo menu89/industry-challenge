@@ -1,0 +1,22 @@
+@use '../../partials/colors' as *;
+@use '../../partials/typography' as *;
+
+.board {
+  &__copy-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__title {
+    margin-right: 12rem;
+  }
+
+  &__item {
+    margin: 0 1.75rem;
+    padding: 0.25rem;
+
+    &--current {
+      border-bottom: 1px solid $ss-red;
+    }
+  }
+}

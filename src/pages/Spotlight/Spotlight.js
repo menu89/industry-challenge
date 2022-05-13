@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SpotlightComp from '../../components/Spotlight/SpotlightComp';
+import Board from '../../components/Board/Board';
 
 
 class Spotlight extends Component {
@@ -7,6 +8,7 @@ class Spotlight extends Component {
     return (
       <div>
         <SpotlightComp />
+        <Board />
       </div>
     );
   }
