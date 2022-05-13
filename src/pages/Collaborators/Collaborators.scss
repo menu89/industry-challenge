@@ -1,0 +1,136 @@
+@use '../../partials/colors' as *;
+@use '../../partials/typography' as *;
+
+.collab {
+
+  &__created-text {
+    font-size: 10;
+  }
+
+  &__avatar-container {
+    display: flex;
+    position: relative;
+    margin-bottom: 10rem;
+  }
+
+  &__avatar {
+    width: 5rem;
+    height: 5rem;
+    
+
+    &--user {
+      border: 2px solid black;
+      background-color: $ss-neutral-light;
+      border-radius: 50%;
+      position: absolute;
+      left: 10rem;
+      top: 2.5rem;
+    }
+
+    &--red {
+      border: 2px solid $ss-red;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      left: 12.5rem;
+      top: 2.5rem;
+    }
+
+    &--yellow {
+      border: 2px solid goldenrod;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      left: 15rem;
+      top: 2.5rem;
+    }
+
+    &--blue {
+      border: 2px solid blue;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      left: 17.5rem;
+      top: 2.5rem;
+    }
+  }
+
+  &__mb-header {
+    font-size: 3.75rem;
+    font-weight: bold;
+  }
+
+  &__mb-container {
+    background-color: $ss-neutral-light;
+    padding: 1.5rem;
+    display: flex;
+    // Bad way to style
+    width: 55rem;
+  }
+
+  &__mb-image-container {
+    position: relative;
+    width: 32rem;
+    height: 37rem;
+  }
+
+  &__mb-image {
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__mb-image-label {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  &__mb-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__mb-text-wrap {
+    background-color: white;
+    height: 17.5rem;
+    margin-left: 2rem;
+    border-radius: 4px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__mb-text {
+    font-size: 1.125rem;
+  }
+
+  &__mb-group {
+
+  }
+
+  &__mb-interaction-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.tag {
+  border: 1px solid $ss-red;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0.5rem 0 0;
+
+  &-container {
+    display: flex;
+  }
+
+
+}
