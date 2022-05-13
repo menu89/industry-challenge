@@ -1,30 +1,15 @@
 import React from 'react';
-import placeholder from '../../../assets/images/placeholder.jpg'
+import SingleBoardImage from '../SingleBoard/SingleBoardImage';
 import './BoardImage.scss';
 
-const BoardImage = () => {
+const BoardImage = ({boardsInformation}) => {
   return (
     <div className='bi'>
-      <div className='bi__wrapper'>
-        <img className='bi__image' src={placeholder} alt="image" />
-        <h3 className='bi__text'>Placeholder</h3>
-      </div>
-
-      <div className='bi__wrapper'>
-        <img className='bi__image' src={placeholder} alt="image" />
-        <h3 className='bi__text'>Placeholder</h3>
-      </div>
-
-      <div className='bi__wrapper'>
-        <img className='bi__image' src={placeholder} alt="image" />
-        <h3 className='bi__text'>Placeholder</h3>
-      </div>
-
-      <div className='bi__wrapper'>
-        <img className='bi__image' src={placeholder} alt="image" />
-        <h3 className='bi__text'>Placeholder</h3>
-      </div>
-      
+      {console.log(boardsInformation)}
+      <SingleBoardImage oneBoard={boardsInformation[0]} />
+      <SingleBoardImage oneBoard={boardsInformation[1]} />
+      <SingleBoardImage oneBoard={boardsInformation[2]} />
+      <SingleBoardImage oneBoard={boardsInformation[3]} />      
     </div>
   );
 };
